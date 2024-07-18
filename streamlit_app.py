@@ -50,7 +50,7 @@ api_url = (
 api_token = "VpPZFx2CrKooOgYuI44Nh60Lagxbig4UpN0pni0SDvLrKM6pIR1UNG9ExydoqBhc"
 
 response = requests.post(
-    api_url, auth=(api_token, api_token), json={"data": {"sentence": fintext}}
+    api_url, auth=(api_token, api_token), json={"data": {"sentences": fintext}}
 )
 try:
     results.append(response.json().get('result'))
@@ -64,8 +64,8 @@ result_text = "NA"
 result_prob = -1
 
 if results:
-    result_text = results[0]["label"]
-    result_prob = round(results[0]["score"], 4)
+    result_text = results[0][0]["label"]
+    result_prob = round(results[0][0]["score"], 4)
 
 #################
 ### SHOW RESULTS ###
