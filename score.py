@@ -3,7 +3,7 @@ from typing import List
 
 from transformers import DistilBertForSequenceClassification, DistilBertTokenizer, pipeline
 
-from finetune import MODEL_DIR
+MODEL_DIR = "/mnt/artifacts/amazon-sentiment/"
 
 model = DistilBertForSequenceClassification.from_pretrained(MODEL_DIR)
 tokenizer = DistilBertTokenizer.from_pretrained(MODEL_DIR)

@@ -48,7 +48,7 @@ The **score.py** provides a scoring function with the following signature: `pred
 ```
 {
   "data": {
-    "sentence": "The item came damanged, 1 star."
+    "sentences": "The item came damanged, 1 star."
   }
 }
 ```
