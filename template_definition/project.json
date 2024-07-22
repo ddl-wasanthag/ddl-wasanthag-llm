@@ -44,7 +44,7 @@
   "prerequisites": [
     {
       "value": "Github Personal Access Token (PAT) Authentication in Domino",
-      "link": null
+      "link": "https://docs.dominodatalab.com/en/latest/user_guide/314004/import-git-repositories/"
     }
   ],
   "goals": null,
